@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.headlines.HeadlinesFragment"
+    android:orientation="vertical">
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tablayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:tabMode="auto"
+        app:tabTextColor="@color/colorPrimaryDark"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="13dp">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/world_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="World" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/business_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Business" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/politics_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Politics" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/sports_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sports" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/technology_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Technology" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/science_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Science" />
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/headlines_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="0dp">
+
+    </androidx.viewpager.widget.ViewPager>
+
+
+
+</LinearLayout>
